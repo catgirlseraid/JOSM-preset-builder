@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: "Segoe UI Variable", "Segoe UI", sans-serif;
+  }
+
+p, a{
+    margin: 0;
+    font-size: 14px;
+}
+
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.window {
+
+    width: fit-content;
+    min-width: 475px;
+    border-top-right-radius: 5px;       
+    border-top-left-radius: 5px;    
+}
+.titlebar {
+    background-color: #F8F0F9;
+    display: flex;          
+    align-items: center;     
+    gap: 6px;    
+    width: fit-content;    
+    min-width: 475px;   
+    border-top-right-radius: 10px;       
+    border-top-left-radius: 10px;     
+    height: 30px;
+}
+
+.titlebar img {
+    height: 20px;           
+    width: 20px; 
+    padding: 5px;           
+}
+
+.titlebar h3 {
+    margin: 0;  
+    font-size: 15px;  
+    font-weight: 450;                 
+}
+
+.titlebar p {
+    margin: 0;              
+    margin-left: auto;  
+    margin-right: 8px;    
+}
+
+.content {
+    background-color: #F0F0F0;
+    padding-top: 10px;
+    border-bottom-right-radius: 10px;       
+    border-bottom-left-radius: 10px; 
+}
+
+.header-icons {
+    display: flex;          
+    align-items: center;       
+    width: fit-content;    
+    min-width: 475px;     
+}
+
+.jsom-pin-button {
+    margin: 0;              
+    margin-left: auto;   
+    margin-right: 5px; 
+    background-color: white;
+    border: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    width: 55px;
+    height: 30px;
+}
+
+.description {
+    margin-left: 6px;
+}
+
+.input {
+    margin-left: 6px;
+    display: flex;               
+}
+
+.input p {
+    margin-right: 10px;
+}
+
+.input input {
+    flex-grow: 1;
+    margin-right: 3px;
+    border: none;
+    border: 1px solid #abadb3;
+    border-radius: 0;
+}
+
+/* this doesn't work at the moment */
+.input input:focus {
+    border: none;
+    border: 1px solid #abadb3;
+    border-radius: 0;
+  }
+
+.wiki-link {
+    margin-left: 6px;
+}
+
+.buttons {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex; 
+    gap: 6px;
+    justify-content: center;
+}
+
+.buttons button {
+    display: flex; 
+    background-color: white;
+    border: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    align-items: center; 
+}
+
+.buttons p {
+    font-size: 13px;
+    font-family: "Segoe UI Variable", "Segoe UI", sans-serif;
+    margin-bottom: 3px;
+}
+
+.buttons img {
+    height: 26px;
+    width: 26px;
+}
+
+.buttons .apply-preset {
+    width: 120px;
+    height: 30px;
+}
+
+.buttons .cancel {
+    width: 90px;
+    height: 30px;
+}
+
+.buttons .help {
+    width: 80px;
+    height: 30px;
+}
