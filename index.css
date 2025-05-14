@@ -163,3 +163,55 @@ footer {
     width: 80px;
     height: 30px;
 }
+
+/* Base styles for the split container */
+.split {
+    display: flex;
+    gap: 20px;
+}
+
+/* Desktop layout (side-by-side with vertical divider) */
+@media (min-width: 1001px) {
+    .split {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .window {
+        position: relative;
+        padding-right: 20px; /* Space for divider */
+    }
+    
+    .window::after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #ccc;
+    }
+}
+
+/* Mobile layout (stacked with horizontal divider) */
+@media (max-width: 1000px) {
+    .split {
+        flex-direction: column;
+    }
+    
+    .window {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+    .window::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: #ccc;
+    }
+}
